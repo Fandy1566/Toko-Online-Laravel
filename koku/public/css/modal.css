@@ -1,0 +1,80 @@
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: calc(100% - 200px);
+    /* Full width */
+    height: calc(100% - 100px);
+    /* Full height */
+    overflow: hidden;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    margin-left: 200px;
+}
+
+/* Modal Content */
+.modal-content {
+    overflow: auto;
+    background-color: #fefefe;
+    margin: auto;
+    height: 80%;
+    padding: 20px;
+    padding-top: 0px;
+    border: 1px solid #888;
+    width: 500px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.modal-header {
+    position: fixed;
+    height: 60px;
+    margin: 0px;
+    padding: 20px 0px;
+    width: calc(500px - 40px);
+    background-color: #fefefe;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.modal-header > h2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.modal-content > .card-form {
+    margin-top: 70px;
+    overflow: auto;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal-content::-webkit-scrollbar {
+    display: none;
+}
